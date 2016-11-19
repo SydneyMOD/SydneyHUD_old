@@ -1,9 +1,9 @@
 -- Load l10n file for m17n
 Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_SydneyHUD", function(loc)
+    local LANGUAGE = SydneyHUD._language[SydneyHUD._data.language]
     for _, filename in pairs(file.GetFiles(SydneyHUD._path .. "loc/")) do
         local str = filename:match('^(.*).json$')
-        log("[SydneyHUD Dev] str: " .. str)
-        if SydneyHUD._data.language == str then
+        if LANGUAGE == str then
             loc:load_localization_file(SydneyHUD._path .. "loc/" .. filename)
             break
         --[[
@@ -14,7 +14,7 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_SydneyHUD"
         end
     end
     loc:load_localization_file(SydneyHUD._path .. "loc/english.json", false)
-    log("[SydneyHUD Dev] language data: " .. SydneyHUD._data.language)
+    log("[SydneyHUD Info] Current language: " .. LANGUAGE)
 end)
 
 Hooks:Add("MenuManagerBuildCustomMenus", "MenuManagerBuildCustomMenus_SydneyHUD", function(menu_manager, nodes)
@@ -41,23 +41,46 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "MenuManagerPopulateCustomMenus_Sydn
     })
 end)
 
---[[
-    Setup our menu callbacks, load our saved data, and build the menu from our json file.
-]]
+-- Setup callback where in menu
 Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_SydneyHUD", function(menu_manager)
 
-    --[[
-        Setup our callbacks as defined in our item callback keys, and perform our logic on the data retrieved.
-    ]]
-
-    --[[
-    -- HUD Lists (Buffs)
-    MenuCallbackHandler.callback_show_buffs = function(self, item)
-        SydneyHUD._data.show_buffs = (item:value() =="on")
+    -- Menu Tweak
+    MenuCallbackHandler.callback_skip_black_screen = function(self, item)
+        SydneyHUD._data.skip_black_screen = (item:value() =="on")
         SydneyHUD:Save()
     end
-    --]]
 
+    MenuCallbackHandler.callback_skip_stat_screen = function(self, item)
+        SydneyHUD._data.skip_stat_screen = (item:value() =="on")
+        SydneyHUD:Save()
+    end
+    MenuCallbackHandler.callback_skip_stat_screen_delay = function(self, item)
+        SydneyHUD._data.skip_stat_screen_delay = item:value()
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_skip_card_pick = function(self, item)
+        SydneyHUD._data.skip_card_pick = (item:value() =="on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_skip_loot_screen = function(self, item)
+        SydneyHUD._data.skip_loot_screen = (item:value() =="on")
+        SydneyHUD:Save()
+    end
+    MenuCallbackHandler.callback_skip_loot_screen_delay = function(self, item)
+        SydneyHUD._data.skip_loot_screen_delay = item:value()
+        SydneyHUD:Save()
+    end
+
+
+    -- SydneyHUD
+    MenuCallbackHandler.callback_sydneyhud_language = function(self, item)
+        SydneyHUD._data.language = item:value()
+        SydneyHUD:Save()
+    end
+
+    -- Reset All
     MenuCallbackHandler.callback_SydneyHUD_reset = function(self, item)
         local menu_title = managers.localization:text("SydneyHUD_reset")
         local menu_message = managers.localization:text("SydneyHUD_reset_message")
@@ -78,15 +101,11 @@ Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_SydneyHUD", function(m
         QuickMenu:new(menu_title, menu_message, menu_options, true)
     end
 
-    --[[
-        Load our previously saved data from our save file.
-    ]]
+    -- Load saved data from save file.
     SydneyHUD:Load()
     SydneyHUD:InitAllMenu()
 
-    --[[
-        Set keybind defaults
-    ]]
+    -- Set keybind default
     LuaModManager:SetPlayerKeybind("load_pre", LuaModManager:GetPlayerKeybind("load_pre") or "f5")
     LuaModManager:SetPlayerKeybind("save_pre", LuaModManager:GetPlayerKeybind("save_pre") or "f6")
 end)

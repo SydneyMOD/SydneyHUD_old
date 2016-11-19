@@ -1,8 +1,33 @@
 {
+    /* SydneyHUD */
     "SydneyHUD_option": "SydneyHUD Option",
     "SydneyHUD_option_desc": "Customize SydneyHUD to what you feel!",
+    "sydneyhud_language": "Language Setting",
+    "sydneyhud_language_desc": "Select language used by SydneyHUD",
+    "sydneyhud_language_english": "English",
+    "sydneyhud_language_japanese": "日本語",
 
-    "SydneyHUD_reset": "Reset ALL",
-    "SydneyHUD_reset_desc": "Reset ALL option to default"
+    /* Reset All */
+    "SydneyHUD_reset": "Reset All",
+    "SydneyHUD_reset_desc": "Reset All Option to Default",
+    "SydneyHUD_reset_message": "Do you REALLY want RESET ALL option to default?",
+    "SydneyHUD_reset_ok": "YES, Reset All",
+    "SydneyHUD_reset_cancel": "Cancel",
     
+    /* Menu Tweak */
+    "skip_black_screen": "Skip Black Screen",
+    "skip_black_screen_desc": "Auto Skip Black Screen when beginning the heist",
+
+    "skip_stat_screen": "Skip Stat Screen",
+    "skip_stat_screen_desc": "Auto Skip Stat Screen after finished",
+    "skip_stat_screen_delay": "Skip Stat Screen Delay",
+    "skip_stat_screen_delay_desc": "Skip Stat Screen will be delay selected seconds",
+
+    "skip_card_pick": "Auto Card Pick",
+    "skip_card_pick_desc": "Auto Select and Pick the Card when PAYDAY (Auto pick will drop same as Manual pick)",
+
+    "skip_loot_screen": "Skip PAYDAY",
+    "skip_loot_screen_desc": "Auto Skip PAYDAY after finished",
+    "skip_loot_screen_delay": "Skip PAYDAY Delay",
+    "skip_loot_screen_delau_desc": "Skip PAYDAY will be delay selected seconds"
 }

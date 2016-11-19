@@ -12,6 +12,7 @@ Warn: Warning. something happened, errored, but can keep working
 Error: Error. something occurred, can not keep working
 
 Dev: Development. only used by test something
+     Usually I delete this log when Release, but IF you find this at Release ver, please think "This is EasterEGG!!! I'm so Lucky!!!"
 --]]
 
 -- if SydneyHUD isn't setup, let us set up
@@ -26,8 +27,15 @@ if not SydneyHUD.setup then
     SydneyHUD._menu = {
         "SydneyHUD_option"
     }
+    SydneyHUD._language = {
+        [1] = "english",
+        [2] = "japanese"
+    }
     SydneyHUD._hook_file = {
-        ["lib/managers/menumanager"] = "MenuManager.lua"
+        ["lib/managers/menumanager"] = "MenuManager.lua",
+        ["lib/states/ingamewaitingforplayers"] = "IngameWaitingForPlayersState.lua",
+        ["lib/managers/menu/stageendscreengui"] = "StageEndScreenGUI.lua",
+        ["lib/managers/menu/lootdropscreengui"] = "LootDropScreenGUI.lua"
     }
 
     -- Load default option data
@@ -170,7 +178,6 @@ if not SydneyHUD.setup then
 
     SydneyHUD:Load()
     SydneyHUD.setup = true
-    log("[SydneyHUD Dev] setup end")
     log("[SydneyHUD Info] Load completed.")
 end
 

@@ -1,8 +1,33 @@
 {
+    /* SydneyHUD */
     "SydneyHUD_option": "SydneyHUD オプション",
     "SydneyHUD_option_desc": "SydneyHUD を自分好みにしましょう!",
+    "sydneyhud_language": "言語設定",
+    "sydneyhud_language_desc": "SydneyHUDで使用する言語を選んでください",
+    "sydneyhud_language_english": "English",
+    "sydneyhud_language_japanese": "日本語",
 
+    /* Reset All */
     "SydneyHUD_reset": "全てリセット",
-    "SydneyHUD_reset_desc": "全ての設定をデフォルトに戻します"
+    "SydneyHUD_reset_desc": "全ての設定をデフォルトに戻します",
+    "SydneyHUD_reset_message": "本当に全ての設定をデフォルトに戻してもよろしいですか？",
+    "SydneyHUD_reset_ok": "リセットする",
+    "SydneyHUD_reset_cancel": "キャンセル",
     
+    /* Menu Tweak */
+    "skip_black_screen": "Job開始画面スキップ",
+    "skip_black_screen_desc": "Job開始時の黒い画面を自動的にスキップします",
+
+    "skip_stat_screen": "統計画面スキップ",
+    "skip_stat_screen_desc": "統計確認後に自動的にスキップします",
+    "skip_stat_screen_delay": "統計画面スキップ遅延",
+    "skip_stat_screen_delay_desc": "指定した秒数後に統計画面スキップを行います",
+
+    "skip_card_pick": "自動カードピック",
+    "skip_card_pick_desc": "PAYDAY時に自動的にカードを選択します (自動的に引いても出るものは同じです)",
+
+    "skip_loot_screen": "PAYDAYスキップ",
+    "skip_loot_screen_desc": "PAYDAY後に自動的にスキップします",
+    "skip_loot_screen_delay": "PAYDAYスキップ遅延",
+    "skip_loot_screen_delau_desc": "指定した秒数後にPAYDAYスキップを行います"
 }

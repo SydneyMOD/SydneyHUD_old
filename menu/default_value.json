@@ -1,3 +1,15 @@
 {
+    /* SydneyHUD */
+    "language": 1,
 
+    /* Menu Tweak */
+    "skip_black_screen": true,
+
+    "skip_stat_screen": true,
+    "skip_stat_screen_delay": 0,
+
+    "skip_card_pick": true,
+
+    "skip_loot_screen": true,
+    "skip_loot_screen_delay": 0
 }

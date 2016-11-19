@@ -1,0 +1,71 @@
+{
+    "menu_id": "SydneyHUD_menutweak_option",
+    "parent_menu_id": "SydneyHUD_option",
+    "title": "SydneyHUD_menutweak_option",
+    "description": "SydneyHUD_menutweak_option_desc",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "skip_black_screen",
+            "title": "skip_black_screen",
+            "description": "skip_black_screen_desc",
+            "callback": "callback_skip_black_screen",
+            "value": "skip_black_screen",
+            "default_value": true
+        },
+
+        {
+            "type": "toggle",
+            "id": "skip_stat_screen",
+            "title": "skip_stat_screen",
+            "description": "skip_stat_screen_desc",
+            "callback": "callback_skip_stat_screen",
+            "value": "skip_stat_screen",
+            "default_value": true
+        },
+        {
+			"type": "slider",
+			"id": "skip_stat_screen_delay",
+			"title": "skip_stat_screen_delay",
+			"description": "skip_stat_screen_delay_desc",
+			"callback": "callback_skip_stat_screen_delay",
+			"value": "skip_stat_screen_delay",
+			"max": 5,
+			"min": 0,
+			"step": 1,
+			"default_value": 0
+		},
+
+        {
+            "type": "toggle",
+            "id": "skip_card_pick",
+            "title": "skip_card_pick",
+            "description": "skip_card_pick_desc",
+            "callback": "callback_skip_card_pick",
+            "value": "skip_card_pick",
+            "default_value": true
+        },
+
+        {
+            "type": "toggle",
+            "id": "skip_loot_screen",
+            "title": "skip_loot_screen",
+            "description": "skip_loot_screen_desc",
+            "callback": "callback_skip_loot_screen",
+            "value": "skip_loot_screen",
+            "default_value": true
+        },
+        {
+			"type": "slider",
+			"id": "skip_loot_screen_delay",
+			"title": "skip_loot_screen_delay",
+			"description": "skip_loot_screen_delay_desc",
+			"callback": "callback_skip_loot_screen_delay",
+			"value": "skip_loot_screen_delay",
+			"max": 5,
+			"min": 0,
+			"step": 1,
+			"default_value": 0
+		}
+    ]
+}
