@@ -1,0 +1,10 @@
+{
+    "name": "SydneyHUD",
+    "description": "HUD mod with some Utils",
+    "author": "SydneyMOD, katabame",
+    "version": "0.1",
+    "priority": 10,
+    "hooks": [
+        {"hook_id": "lib/managers/menumanager", "script_path": "SydneyHUD.lua"}
+    ]
+}
