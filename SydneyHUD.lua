@@ -41,7 +41,17 @@ if not SydneyHUD.setup then
         ["lib/setups/menusetup"] = "MenuSetup.lua",
         ["lib/states/menutitlescreenstate"] = "MenuTitleScreenState.lua",
         ["lib/managers/hud/hudstatsscreen"] = "HUDStatsScreen.lua",
-        ["lib/managers/menu/menunodegui"] = "MenuNodeGUI.lua"
+        ["lib/managers/menu/menunodegui"] = "MenuNodeGUI.lua",
+        ["lib/network/base/handlers/connectionnetworkhandler"] = "ConnectionNetworkHandler.lua",
+        ["lib/managers/menu/menubackdropgui"] = "MenuBackDropGUI.lua",
+        ["lib/units/props/missiondoor"] = "MissionDoor.lua",
+        ["lib/units/weapons/newraycastweaponbase"] = "NewRayCastWeaponBase.lua",
+        ["lib/units/equipment/ammo_bag/ammobagbase"] = "AmmoBagBase.lua",
+        ["lib/units/equipment/bodybags_bag/bodybagsbagbase"] = "BodyBagsBagBase.lua",
+        ["lib/units/equipment/doctor_bag/doctorbagbase"] = "DoctorBagBase.lua",
+        ["lib/units/equipment/ecm_jammer/ecmjammerbase"] = "ECMJammerBase.lua",
+        ["lib/units/equipment/grenade_crate/grenadecratebase"] = "GrenadeCrateBase.lua",
+        ["lib/units/equipment/sentry_gun/sentrygunbase"] = "SentryGunBase.lua"
     }
 
     -- Load default option data
