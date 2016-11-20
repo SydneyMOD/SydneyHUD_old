@@ -15,6 +15,9 @@
     "SydneyHUD_reset_cancel": "キャンセル",
     
     /* Menu Tweak */
+    "enable_buy_all_assets": "自動Buy All",
+    "enable_buy_all_assets_desc": "assets画面で自動的にBuy Allします",
+    
     "skip_black_screen": "Job開始画面スキップ",
     "skip_black_screen_desc": "Job開始時の黒い画面を自動的にスキップします",
 
@@ -38,8 +41,11 @@
     "enable_pacified": "脅迫マーカー",
     "enable_pacified_desc": "脅迫に従った民間人のマーカーを緑にします",
 
-    "center_assault_banner": "アサルトバナー改良",
+    "center_assault_banner": "中央アサルトバナー",
     "center_assault_banner_desc": "アサルトバナーを画面上中央に表示します",
+
+    "enable_enhanced_assault_banner": "アサルトバナー拡張",
+    "enable_enhanced_assault_banner_desc": "アサルトの詳細な情報をアサルトバナーに記載します",
 
     "show_interaction_circle": "インタラクションサークル",
     "show_interaction_circle_desc": "インタラクション時にサークルを表示します",
@@ -64,5 +70,18 @@
     "interaction_color_g": "インタラクションサークル色 緑",
     "interaction_color_g_desc": "インタラクションサークルの緑色の割合です",
     "interaction_color_b": "インタラクションサークル色 青",
-    "interaction_color_b_desc": "インタラクションサークルの青色の割合です"
+    "interaction_color_b_desc": "インタラクションサークルの青色の割合です",
+
+    /* Interact Tweak */
+    "hold_to_pick": "ホールドピックアップ",
+    "hold_to_pick_desc": "[F]キーを押したままでインスタントキャッシュを拾います",
+
+    "hold_to_pick_delay": "ホールドピックアップディレイ",
+    "hold_to_pick_delay_desc": "ホールドピックアップの間隔です",
+
+    "push_to_interact": "プッシュインタラクト",
+    "push_to_interact_desc": "[F]キーを1度押すだけでインタラクト出来るようにします",
+
+    "equipment_interrupt": "インベントリインタラクト",
+    "equipment_interrupt_desc": "[F]キーの代わりに[G]キーを使用するようにします"
 }

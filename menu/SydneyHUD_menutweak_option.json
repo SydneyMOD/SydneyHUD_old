@@ -6,6 +6,15 @@
     "items": [
         {
             "type": "toggle",
+            "id": "enable_buy_all_assets",
+            "title": "enable_buy_all_assets",
+            "description": "enable_buy_all_assets_desc",
+            "callback": "callback_enable_buy_all_assets",
+            "value": "enable_buy_all_assets",
+            "default_value": true
+        },
+        {
+            "type": "toggle",
             "id": "skip_black_screen",
             "title": "skip_black_screen",
             "description": "skip_black_screen_desc",
@@ -13,7 +22,6 @@
             "value": "skip_black_screen",
             "default_value": true
         },
-
         {
             "type": "toggle",
             "id": "skip_stat_screen",

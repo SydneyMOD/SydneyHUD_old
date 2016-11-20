@@ -45,6 +45,11 @@ end)
 Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_SydneyHUD", function(menu_manager)
 
     -- Menu Tweak
+    MenuCallbackHandler.callback_enable_buy_all_assets = function(self, item)
+        SydneyHUD._data.enable_buy_all_assets = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
     MenuCallbackHandler.callback_skip_black_screen = function(self, item)
         SydneyHUD._data.skip_black_screen = (item:value() == "on")
         SydneyHUD:Save()
@@ -81,6 +86,11 @@ Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_SydneyHUD", function(m
 
     MenuCallbackHandler.callback_center_assault_banner = function(self, item)
         SydneyHUD._data.center_assault_banner = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_enable_enhanced_assault_banner = function(self, item)
+        SydneyHUD._data.enable_enhanced_assault_banner = (item:value() == "on")
         SydneyHUD:Save()
     end
 
@@ -126,6 +136,26 @@ Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_SydneyHUD", function(m
         SydneyHUD:Save()
     end
 
+    -- Interact Tweak
+    MenuCallbackHandler.callback_hold_to_pick = function(self, item)
+        SydneyHUD._data.hold_to_pick = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_hold_to_pick_delay = function(self, item)
+        SydneyHUD._data.hold_to_pick_delay = item:value()
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_push_to_interact = function(self, item)
+        SydneyHUD._data.push_to_interact = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_equipment_interrupt = function(self, item)
+        SydneyHUD._data.equipment_interrupt = (item:value() == "on")
+        SydneyHUD:Save()
+    end
 
     -- SydneyHUD
     MenuCallbackHandler.callback_sydneyhud_language = function(self, item)

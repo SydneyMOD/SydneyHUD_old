@@ -71,7 +71,12 @@ if not SydneyHUD.setup then
         ["lib/managers/hud/hudpresenter"] = "HUDPresenter.lua",
         ["lib/managers/hud/hudsuspicion"] = "HUDSuspicion.lua",
         ["lib/tweak_data/playertweakdata"] = "PlayerTweakData.lua",
-        ["lib/units/beings/player/states/playermaskoff"] = "PlayerMaskOff.lua"
+        ["lib/units/beings/player/states/playermaskoff"] = "PlayerMaskOff.lua",
+        ["lib/managers/missionassetsmanager"] = "MissionAssetsManager.lua",
+        ["lib/managers/localizationmanager"] = "LocalizationManager.lua",
+        ["lib/managers/objectinteractionmanager"] = "ObjectInteractionManager.lua",
+        ["lib/units/beings/player/states/playercivilian"] = "PlayerCivilian.lua",
+        ["lib/units/beings/player/states/playerdriving"] = "PlayerDriving.lua"
     }
 
     -- Load default option data

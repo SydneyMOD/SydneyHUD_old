@@ -3,6 +3,8 @@
     "language": 1,
 
     /* Menu Tweak */
+    "enable_buy_all_assets": true,
+
     "skip_black_screen": true,
 
     "skip_stat_screen": true,
@@ -16,6 +18,7 @@
     /* HUD Tweak */
     "enable_pacified": true,
     "center_assault_banner": true,
+    "enable_enhanced_assault_banner": true,
 
     "show_interaction_circle": true,
     "show_interaction_text": true,
@@ -30,5 +33,12 @@
 
     "interaction_color_r": 1,
     "interaction_color_g": 0.66,
-    "interaction_color_b": 0
+    "interaction_color_b": 0,
+
+    /* Interact Tweak */
+    "hold_to_pick": true,
+    "hokd_to_pick_delay": 0.1,
+
+    "push_to_interact": true,
+    "equipment_interrupt": true
 }

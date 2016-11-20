@@ -24,6 +24,15 @@
         },
         {
             "type": "toggle",
+            "id": "enable_enhanced_assault_banner",
+            "title": "enable_enhanced_assault_banner",
+            "description": "enable_enhanced_assault_banner_desc",
+            "callback": "callback_enable_enhanced_assault_banner",
+            "value": "enable_enhanced_assault_banner",
+            "default_value": true
+        },
+        {
+            "type": "toggle",
             "id": "enable_objective_animation",
             "title": "enable_objective_animation",
             "description": "enable_objective_animation_desc",
