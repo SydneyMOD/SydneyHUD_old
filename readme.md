@@ -11,3 +11,6 @@
 * Auto skip stat screen
 * Auto pick PAYDAY card
 * Auto skip after PAYDAY
+* Anti desync
+* Customize Inventory with Drag and Drop
+* Advanced Tab Menu

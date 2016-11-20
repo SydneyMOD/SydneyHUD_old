@@ -35,7 +35,13 @@ if not SydneyHUD.setup then
         ["lib/managers/menumanager"] = "MenuManager.lua",
         ["lib/states/ingamewaitingforplayers"] = "IngameWaitingForPlayersState.lua",
         ["lib/managers/menu/stageendscreengui"] = "StageEndScreenGUI.lua",
-        ["lib/managers/menu/lootdropscreengui"] = "LootDropScreenGUI.lua"
+        ["lib/managers/menu/lootdropscreengui"] = "LootDropScreenGUI.lua",
+        ["lib/units/beings/player/huskplayermovement"] = "HuskPlayerMovement.lua",
+        ["lib/managers/menu/blackmarketgui"] = "BlackMarketGUI.lua",
+        ["lib/setups/menusetup"] = "MenuSetup.lua",
+        ["lib/states/menutitlescreenstate"] = "MenuTitleScreenState.lua",
+        ["lib/managers/hud/hudstatsscreen"] = "HUDStatsScreen.lua",
+        ["lib/managers/menu/menunodegui"] = "MenuNodeGUI.lua"
     }
 
     -- Load default option data
