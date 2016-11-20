@@ -15,6 +15,13 @@
     "SydneyHUD_reset_cancel": "キャンセル",
     
     /* Menu Tweak */
+    "lobby_skins_mode": "ロビースキンモード",
+    "lobby_skins_mode_desc": "ロビーでスキンを表示する武器を選択します",
+    "lobby_skins_vanilla": "バニラ",
+    "lobby_skins_none": "無し",
+    "lobby_skins_primary": "プライマリ",
+    "lobby_skins_secondary": "セカンダリ",
+
     "enable_buy_all_assets": "自動Buy All",
     "enable_buy_all_assets_desc": "assets画面で自動的にBuy Allします",
     

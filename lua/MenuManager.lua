@@ -45,6 +45,11 @@ end)
 Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_SydneyHUD", function(menu_manager)
 
     -- Menu Tweak
+    MenuCallbackHandler.callback_lobby_skins_mode = function(self, item)
+        SydneyHUD._data.lobby_skins_mode = item:value()
+        SydneyHUD:Save()
+    end
+
     MenuCallbackHandler.callback_enable_buy_all_assets = function(self, item)
         SydneyHUD._data.enable_buy_all_assets = (item:value() == "on")
         SydneyHUD:Save()

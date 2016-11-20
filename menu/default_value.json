@@ -3,6 +3,8 @@
     "language": 1,
 
     /* Menu Tweak */
+    "lobby_skins_mode": 1,
+    
     "enable_buy_all_assets": true,
 
     "skip_black_screen": true,
