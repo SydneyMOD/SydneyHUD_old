@@ -1,4 +1,4 @@
-SydneyHUD.DragAndDropInventory = SydneyHUD.DragAndDropInventory or { from_x = 0, from_y = 0 }
+_G.DragAndDropInventory = SydneyHUD.DragAndDropInventory or { from_x = 0, from_y = 0 }
 local select_original = BlackMarketGuiSlotItem.select
 local deselect_original = BlackMarketGuiSlotItem.deselect
 local mouse_pressed_original = BlackMarketGui.mouse_pressed

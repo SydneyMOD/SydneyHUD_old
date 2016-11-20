@@ -51,7 +51,20 @@ if not SydneyHUD.setup then
         ["lib/units/equipment/doctor_bag/doctorbagbase"] = "DoctorBagBase.lua",
         ["lib/units/equipment/ecm_jammer/ecmjammerbase"] = "ECMJammerBase.lua",
         ["lib/units/equipment/grenade_crate/grenadecratebase"] = "GrenadeCrateBase.lua",
-        ["lib/units/equipment/sentry_gun/sentrygunbase"] = "SentryGunBase.lua"
+        ["lib/units/equipment/sentry_gun/sentrygunbase"] = "SentryGunBase.lua",
+        ["lib/units/enemies/cop/copdamage"] = "CopDamage.lua",
+        ["lib/units/props/digitalgui"] = "DigitalGUI.lua",
+        ["lib/managers/enemymanager"] = "EnemyManager.lua",
+        ["lib/managers/hudmanager"] = "HUDManager.lua",
+        ["lib/units/beings/player/playerdamage"] = "PlayerDamage.lua",
+        ["lib/managers/playermanager"] = "PlayerManager.lua",
+        ["lib/units/beings/player/playermovement"] = "PlayerMovement.lua",
+        ["lib/units/props/securitycamera"] = "SecurityCamera.lua",
+        ["lib/units/equipment/sentry_gun/sentrygundamage"] = "SentryGunDamage.lua",
+        ["lib/units/weapons/sentrygunweapon"] = "SentryGunWeapon.lua",
+        ["lib/units/props/timergui"] = "TimerGUI.lua",
+        ["lib/units/unitbase"] = "UnitBase.lua",
+        ["lib/network/handlers/unitnetworkhandler"] = "UnitNetworkHandler.lua"
     }
 
     -- Load default option data
@@ -151,8 +164,8 @@ if not SydneyHUD.setup then
             end
         elseif target == "SydneyHUD-Assets" then
             local path = "assets/mod_overrides/SydneyHUD-Assets/revision.txt"
-            file = io.input(path)
-            if file then
+            if io.file_is_readable(path) then
+                file = io.input(path)
                 version = io.read()
             end
         end
