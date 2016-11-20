@@ -29,5 +29,40 @@
     "skip_loot_screen": "PAYDAYスキップ",
     "skip_loot_screen_desc": "PAYDAY後に自動的にスキップします",
     "skip_loot_screen_delay": "PAYDAYスキップ遅延",
-    "skip_loot_screen_delau_desc": "指定した秒数後にPAYDAYスキップを行います"
+    "skip_loot_screen_delau_desc": "指定した秒数後にPAYDAYスキップを行います",
+
+    /* HUD Tweak */
+    "SydneyHUD_hud_tweak": "HUD拡張",
+    "SydneyHUD_hud_tweak_desc": "HUDの機能を拡張します",
+
+    "enable_pacified": "脅迫マーカー",
+    "enable_pacified_desc": "脅迫に従った民間人のマーカーを緑にします",
+
+    "center_assault_banner": "アサルトバナー改良",
+    "center_assault_banner_desc": "アサルトバナーを画面上中央に表示します",
+
+    "show_interaction_circle": "インタラクションサークル",
+    "show_interaction_circle_desc": "インタラクション時にサークルを表示します",
+
+    "show_interaction_text": "インタラクションテキスト",
+    "show_interaction_text_desc": "インタラクション時に残り秒数を表示します",
+
+    "show_text_borders": "テキストボーダー",
+    "show_text_borders_desc": "テキストにボーダーを付けます",
+
+    "enable_objective_animation": "目標のアニメーション",
+    "enable_objective_animation_desc": "目標をアニメーションします",
+
+    "show_suspicion_text": "数値疑惑",
+    "show_suspicion_text_desc": "数値疑惑のテキストを表示します",
+
+    "anti_bobble": "視界揺れの軽減",
+    "anti_bobble_desc": "走るときなどの視界の揺れを無効化します",
+
+    "interaction_color_r": "インタラクションサークル色 赤",
+    "interaction_color_r_desc": "インタラクションサークルの赤色の割合です",
+    "interaction_color_g": "インタラクションサークル色 緑",
+    "interaction_color_g_desc": "インタラクションサークルの緑色の割合です",
+    "interaction_color_b": "インタラクションサークル色 青",
+    "interaction_color_b_desc": "インタラクションサークルの青色の割合です"
 }

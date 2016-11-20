@@ -64,7 +64,14 @@ if not SydneyHUD.setup then
         ["lib/units/weapons/sentrygunweapon"] = "SentryGunWeapon.lua",
         ["lib/units/props/timergui"] = "TimerGUI.lua",
         ["lib/units/unitbase"] = "UnitBase.lua",
-        ["lib/network/handlers/unitnetworkhandler"] = "UnitNetworkHandler.lua"
+        ["lib/network/handlers/unitnetworkhandler"] = "UnitNetworkHandler.lua",
+        ["lib/managers/group_ai_states/groupaistatebase"] = "GroupAIStateBase.lua",
+        ["lib/managers/hud/hudassaultcorner"] = "HUDAssaultCorner.lua",
+        ["lib/managers/hud/hudinteraction"] = "HUDInteraction.lua",
+        ["lib/managers/hud/hudpresenter"] = "HUDPresenter.lua",
+        ["lib/managers/hud/hudsuspicion"] = "HUDSuspicion.lua",
+        ["lib/tweak_data/playertweakdata"] = "PlayerTweakData.lua",
+        ["lib/units/beings/player/states/playermaskoff"] = "PlayerMaskOff.lua"
     }
 
     -- Load default option data

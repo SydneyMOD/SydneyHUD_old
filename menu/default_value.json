@@ -11,5 +11,24 @@
     "skip_card_pick": true,
 
     "skip_loot_screen": true,
-    "skip_loot_screen_delay": 0
+    "skip_loot_screen_delay": 0,
+
+    /* HUD Tweak */
+    "enable_pacified": true,
+    "center_assault_banner": true,
+
+    "show_interaction_circle": true,
+    "show_interaction_text": true,
+
+    "show_text_borders": true,
+
+    "enable_objective_animation": true,
+    
+    "show_suspicion_text": true,
+
+    "anti_bobble": true,
+
+    "interaction_color_r": 1,
+    "interaction_color_g": 0.66,
+    "interaction_color_b": 0
 }

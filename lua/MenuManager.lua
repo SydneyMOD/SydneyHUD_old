@@ -46,12 +46,12 @@ Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_SydneyHUD", function(m
 
     -- Menu Tweak
     MenuCallbackHandler.callback_skip_black_screen = function(self, item)
-        SydneyHUD._data.skip_black_screen = (item:value() =="on")
+        SydneyHUD._data.skip_black_screen = (item:value() == "on")
         SydneyHUD:Save()
     end
 
     MenuCallbackHandler.callback_skip_stat_screen = function(self, item)
-        SydneyHUD._data.skip_stat_screen = (item:value() =="on")
+        SydneyHUD._data.skip_stat_screen = (item:value() == "on")
         SydneyHUD:Save()
     end
     MenuCallbackHandler.callback_skip_stat_screen_delay = function(self, item)
@@ -60,16 +60,69 @@ Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_SydneyHUD", function(m
     end
 
     MenuCallbackHandler.callback_skip_card_pick = function(self, item)
-        SydneyHUD._data.skip_card_pick = (item:value() =="on")
+        SydneyHUD._data.skip_card_pick = (item:value() == "on")
         SydneyHUD:Save()
     end
 
     MenuCallbackHandler.callback_skip_loot_screen = function(self, item)
-        SydneyHUD._data.skip_loot_screen = (item:value() =="on")
+        SydneyHUD._data.skip_loot_screen = (item:value() == "on")
         SydneyHUD:Save()
     end
     MenuCallbackHandler.callback_skip_loot_screen_delay = function(self, item)
         SydneyHUD._data.skip_loot_screen_delay = item:value()
+        SydneyHUD:Save()
+    end
+
+    -- HUD Tweak
+    MenuCallbackHandler.callback_enable_pacified = function(self, item)
+        SydneyHUD._data.enable_pacified = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_center_assault_banner = function(self, item)
+        SydneyHUD._data.center_assault_banner = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_show_interaction_circle = function(self, item)
+        SydneyHUD._data.show_interaction_circle = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+    MenuCallbackHandler.callback_show_interaction_text = function(self, item)
+        SydneyHUD._data.show_interaction_text = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_show_text_borders = function(self, item)
+        SydneyHUD._data.show_text_borders = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_enable_objective_animation = function(self, item)
+        SydneyHUD._data.enable_objective_animation = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_show_suspicion_text = function(self, item)
+        SydneyHUD._data.show_suspicion_text = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_anti_bobble = function(self, item)
+        SydneyHUD._data.anti_bobble = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_interaction_color_r = function(self, item)
+        SydneyHUD._data.interaction_color_r = item:value()
+        SydneyHUD:Save()
+    end
+    MenuCallbackHandler.callback_interaction_color_g = function(self, item)
+        SydneyHUD._data.interaction_color_g = item:value()
+        SydneyHUD:Save()
+    end
+    MenuCallbackHandler.callback_interaction_color_b = function(self, item)
+        SydneyHUD._data.interaction_color_b = item:value()
         SydneyHUD:Save()
     end
 
