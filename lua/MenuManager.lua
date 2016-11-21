@@ -162,6 +162,22 @@ Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_SydneyHUD", function(m
         SydneyHUD:Save()
     end
 
+    -- Gadget Tweak
+    MenuCallbackHandler.callback_enable_flashlight_extender = function(self, item)
+        SydneyHUD._data.enable_flashlight_extender = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_flashlight_range = function(self, item)
+        SydneyHUD._data.flashlight_range = item:value()
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_flashlight_angle = function(self, item)
+        SydneyHUD._data.flashlight_angle = item:value()
+        SydneyHUD:Save()
+    end
+
     -- SydneyHUD
     MenuCallbackHandler.callback_sydneyhud_language = function(self, item)
         SydneyHUD._data.language = item:value()

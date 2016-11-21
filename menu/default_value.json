@@ -42,5 +42,10 @@
     "hokd_to_pick_delay": 0.1,
 
     "push_to_interact": true,
-    "equipment_interrupt": true
+    "equipment_interrupt": true,
+
+    /* Gadget Tweak */
+    "enable_flashlight_extender": true,
+    "flashlight_range": 1000,
+    "flashlight_angle": 60
 }

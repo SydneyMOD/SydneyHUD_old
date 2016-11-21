@@ -50,7 +50,8 @@
         {"hook_id": "lib/managers/objectinteractionmanager", "script_path": "SydneyHUD.lua"},
         {"hook_id": "lib/units/beings/player/states/playercivilian", "script_path": "SydneyHUD.lua"},
         {"hook_id": "lib/units/beings/player/states/playerdriving", "script_path": "SydneyHUD.lua"},
-        {"hook_id": "lib/managers/menu/menuscenemanager", "script_path": "SydneyHUD.lua"}
+        {"hook_id": "lib/managers/menu/menuscenemanager", "script_path": "SydneyHUD.lua"},
+        {"hook_id": "lib/units/weapons/weaponflashlight", "script_path": "SydneyHUD.lua"}
     ],
     "keybinds": [
         {
