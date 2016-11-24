@@ -1,0 +1,69 @@
+{
+	"menu_id": "SydneyHUD_gameplay_tweaks",
+	"parent_menu_id": "SydneyHUD_options",
+	"title": "SydneyHUD_gameplay_tweaks",
+	"description": "SydneyHUD_gameplay_tweaks_desc",
+	"items": [
+		{
+			"type": "toggle",
+			"id": "remove_answered_pager_contour",
+			"title": "remove_answered_pager_contour",
+			"description": "remove_answered_pager_contour_desc",
+			"callback": "callback_remove_answered_pager_contour",
+			"value": "remove_answered_pager_contour",
+			"default_value": true
+		},
+		{
+			"type" : "divider",
+			"size" : 16
+		},
+		{
+			"type" : "toggle",
+			"id" : "anti_stealth_grenades",
+			"title" : "anti_stealth_grenades",
+			"description" : "anti_stealth_grenades_desc",
+			"callback" : "callback_anti_stealth_grenades",
+			"value" : "anti_stealth_grenades",
+			"default_value" : true
+		},
+		{
+			"type" : "divider",
+			"size" : 16
+		},
+		{
+			"type" : "toggle",
+			"id" : "feed_assault_phase",
+			"title" : "feed_assault_phase",
+			"description" : "feed_assault_phase_desc",
+			"callback" : "callback_feed_assault_phase",
+			"value" : "feed_assault_phase",
+			"default_value" : true
+		},
+		{
+			"type" : "divider",
+			"size" : 16
+		},
+		{
+			"type" : "toggle",
+			"id" : "anti_bobble",
+			"title" : "anti_bobble",
+			"description" : "anti_bobble_desc",
+			"callback" : "callback_anti_bobble",
+			"value" : "anti_bobble",
+			"default_value" : true
+		},
+		{
+			"type" : "divider",
+			"size" : 16
+		},
+		{
+			"type" : "toggle",
+			"id" : "ecm_warning",
+			"title" : "ecm_warning",
+			"description" : "ecm_warning_desc",
+			"callback" : "callback_ecm_warning",
+			"value" : "ecm_warning",
+			"default_value" : true
+		}
+	]
+}

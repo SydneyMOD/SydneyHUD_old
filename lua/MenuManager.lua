@@ -123,6 +123,16 @@ Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_SydneyHUD", function(m
         SydneyHUD:Save()
     end
 
+    MenuCallbackHandler.callback_show_reload_interaction = function(self, item)
+        SydneyHUD._data.show_reload_interaction = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_show_melee_interaction = function(self, item)
+        SydneyHUD._data.show_melee_interaction = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
     MenuCallbackHandler.callback_anti_bobble = function(self, item)
         SydneyHUD._data.anti_bobble = (item:value() == "on")
         SydneyHUD:Save()
@@ -175,6 +185,52 @@ Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_SydneyHUD", function(m
 
     MenuCallbackHandler.callback_flashlight_angle = function(self, item)
         SydneyHUD._data.flashlight_angle = item:value()
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_enable_laser_options = function(self, item)
+        SydneyHUD._data.enable_laser_options = (item:value() == "on")
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_laser_color_r = function(self, item)
+        SydneyHUD._data.laser_color_r = item:value()
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_laser_color_g = function(self, item)
+        SydneyHUD._data.laser_color_g = item:value()
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_laser_color_b = function(self, item)
+        SydneyHUD._data.laser_color_b = item:value()
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_laser_color_rainbow = function(self, item)
+        SydneyHUD._data.laser_color_rainbow = item:value()
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_laser_light = function(self, item)
+        SydneyHUD._data.laser_light = item:value()
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_laser_glow = function(self, item)
+        SydneyHUD._data.laser_glow = item:value()
+        SydneyHUD:Save()
+    end
+
+    MenuCallbackHandler.callback_laser_color_a = function(self, item)
+        SydneyHUD._data.laser_color_a = item:value()
+        SydneyHUD:Save()
+    end
+
+    -- Gameplay Tweak
+    MenuCallbackHandler.callback_anti_stealth_grenades = function(self, item)
+        SydneyHUD._data.anti_stealth_grenades = (item:value() == "on")
         SydneyHUD:Save()
     end
 

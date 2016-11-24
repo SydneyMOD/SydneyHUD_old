@@ -31,6 +31,9 @@
     
     "show_suspicion_text": true,
 
+    "show_reload_interaction": true,
+    "show_melee_interaction": true,
+
     "anti_bobble": true,
 
     "interaction_color_r": 1,
@@ -47,5 +50,20 @@
     /* Gadget Tweak */
     "enable_flashlight_extender": true,
     "flashlight_range": 1000,
-    "flashlight_angle": 60
+    "flashlight_angle": 60,
+
+    "enable_laser_options": true,
+    "laser_color_r": 0,
+    "laser_color_g": 1,
+    "laser_color_b": 0,
+
+    "laser_color_rainbow": true,
+
+    "laser_light": 10,
+    "laser_glow": 1,
+
+    "laser_color_a": 0.5,
+
+    /* GamePlay Tweak */
+    "anti_stealth_grenades": true
 }

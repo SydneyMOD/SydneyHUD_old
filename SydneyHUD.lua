@@ -78,7 +78,9 @@ if not SydneyHUD.setup then
         ["lib/units/beings/player/states/playercivilian"] = "PlayerCivilian.lua",
         ["lib/units/beings/player/states/playerdriving"] = "PlayerDriving.lua",
         ["lib/managers/menu/menuscenemanager"] = "MenuSceneManager.lua",
-        ["lib/units/weapons/weaponflashlight"] = "WeaponFlashlight.lua"
+        ["lib/units/weapons/weaponflashlight"] = "WeaponFlashlight.lua",
+        ["lib/units/beings/player/states/playerstandard"] = "PlayerStandard.lua",
+        ["lib/units/weapons/weaponlaser"] = "WeaponLaser.lua"
     }
 
     -- Load default option data

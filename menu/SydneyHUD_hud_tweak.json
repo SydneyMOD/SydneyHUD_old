@@ -78,6 +78,24 @@
         },
         {
             "type": "toggle",
+            "id": "show_reload_interaction",
+            "title": "show_reload_interaction",
+            "description": "show_reload_interaction_desc",
+            "callback": "callback_show_reload_interaction",
+            "value": "show_reload_interaction",
+            "default_value": true
+        },
+        {
+            "type": "toggle",
+            "id": "show_melee_interaction",
+            "title": "show_melee_interaction",
+            "description": "show_melee_interaction_desc",
+            "callback": "callback_show_melee_interaction",
+            "value": "show_melee_interaction",
+            "default_value": true
+        },
+        {
+            "type": "toggle",
             "id": "anti_bobble",
             "title": "anti_bobble",
             "description": "anti_bobble",
